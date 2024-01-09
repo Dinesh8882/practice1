@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="main_container">
+
+        <div class="main_nav-container">
+            <i>&equiv;</i>
+            <div class="logo">
+                
+                
+            </div>
+            <div class="nav_list">
+                <ul>
+                    <li><a href="">Pricing</a></li>
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Tutorials</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Resources</a></li>
+                    <div class="sign_up">
+                        <button class="signin navbtn">Sign in</button>
+                        <button class="signup navbtn">Sign up</button>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <section>
+            <h1>Make your website <span>wonderful</span></h1>
+            <p>Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.</p>
+            <div class="button">
+                <button class="btn1 btn">Start free trial</button>
+                <button class="btn2 btn">Learn more</button>
+            </div>
+        </section>
+        
+            <!-- <div class="image1">
+                <img src="./hero-image-01.png" alt="">
+            </div> -->
+    </div>
+
+    <script>
+        let btn= document.querySelector("i")
+        let listshow= document.querySelector("ul")
+        let bool = true
+        btn.addEventListener("click",function(){
+            if(bool == true ){
+            listshow.style.left = "50%"
+                bool = false
+            }
+            else{
+            listshow.style.left = "-100%"
+                bool = true
+            }
+        })
+
+    </script>
+</body>
+
+</html>
